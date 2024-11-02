@@ -69,7 +69,7 @@ let trackList = [
     {
         name: "Magic",
         artist: "Coldplay",
-        path: "./music/magic.mp3",
+        path: "./music/Magic.mp3",
     },
     {
         name: "Yellow",
