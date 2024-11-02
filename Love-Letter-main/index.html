@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300;400;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.5.3/lottie_svg.min.js"></script>
+    <title>Proyectito O ESO ES LO QUE CREES NO?</title>
+    <link rel="icon" href="icons/BrawlStars-lg.png"/>
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body style="font-family: 'Comic Neue'; background-image: url('https://th.bing.com/th/id/OIF.nSBHC1kIdgNfYAFDHGUIzg?rs=1&pid=ImgDetMain');" class="relative">
+
+    <!-- MUSIC PLAYER -->
+    <div class="fixed left-6 bottom-6 z-10">
+        <div class="music-container relative bg-neutral-100 py-3 px-3 border-2 z-10 rounded-md border-black flex items-center">
+            <div class="toggle-player bg-neutral-100 border-2 border-black">
+                <img class="w-full" src="icons/close.svg" alt="">
+            </div>
+            <div class="avatar absolute w-14">
+                <img class="w-full border-2 bg-white border-black rounded-md" src="icons/pinkheart.svg" alt="">
+            </div>
+            <div class="player">
+                <div class="sound-bars-lottie">
+                    <div class="sound-bars"></div>
+                </div>
+                <div class="track-info -space-y-1">
+                    <div class="trackname">Cosas</div>
+                    <div class="trackartist">Saiko</div>
+                </div>
+                <div class="track-nav">
+                    <div class="prev-track">
+                        <img class="w-7" src="icons/backplayer.svg" alt="">
+                    </div>
+                    <div class="playpause-track">
+                        <img class="w-8" src="icons/play.svg" alt="">
+                    </div>
+                    <div class="next-track">
+                        <img class="w-7" style="transform: rotate(180deg);" src="icons/backplayer.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- BACKGROUND -->
+    <div class="background">
+        <div class="one">
+            <div class="container">
+                <div class="envelope-wrapper">
+                    <div class="envelope">
+                        <div class="letter">
+                            <div class="text">
+                                <strong style="font-size: .85rem;">MI AMOR FELIZ CUMPLEAÑOS,</strong>
+                                <p style="text-indent: 10px;">
+                                    Sinceramente no sé en que momento me enamoré de ti, pero lo que si sé es que eres mi momentos más preciados, eres esa persona a la que miro a los ojos y no puedo parar de desear que sea contigo con quien pueda formar mi vida, cada vez que nos recostamos uno encima del otro entiendo que tú eres ese amor que tanto se anhela tener y cada vez que nos tenemos que ir solo puedo pensar "No me sueltes, solo dame un minuto más de tus abrazos", tengo el habito de guardar poemas que me recuerdan a ti para nunca olvidar lo mucho que siento por ti y creería que aunque perdiese la memoria mi corazón te reconocería al instante, eres esa persona con la que mi alma se siente libre y hoy te confieso una vez más que mi amor por ti sobrepasa hasta lo que no te puedes imaginar.
+                                </p>
+                                <p  class="love"> TE AMO MUCHO</p>
+                                <div class="pana">
+                                    <img src="icons/heartarrow.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="heart"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOURTH -->
+    <div class="w-full h-[100vh] z-0 relative">
+        <!-- BACKGROUND -->
+        <div class="w-full h-full flex justify-center items-center">
+            <!-- BRAWL STARS -->
+        <div class="flex bg-neutral-100 gap-10 relative border-2 z-10 border-black flex-col px-8 pb-5 shadow-md pt-9 rounded-md w-1/2 h-3/5"> 
+            <!-- Secciones para cada paso -->
+            <div id="step-1" class="step active">
+                <h1 class="text-center font-bold text-2xl">ESCOGE TU CHAMP</h1>
+                <div class="card-container">
+                    <div class="card " onclick="flipCard(this)">
+                        <div class="card-inner">
+                            <div class="card-front ">
+                                <img class="w-full h-full object-contain" src="icons/WhatsApp_Image_2024-10-24_at_1.38.46_AM-removebg-preview.png" alt="">
+                            </div>
+                            <div class="card-back bg-indigo-500">
+                                <img class="w-full h-full object-contain" src="icons/Edgar-removebg-preview.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card" onclick="flipCard(this)">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <img class="w-full h-full object-contain" src="icons/WhatsApp_Image_2024-10-24_at_1.38.46_AM-removebg-preview.png" alt="">
+                            </div>
+                            <div class="card-back bg-yellow-300">
+                                <img class="w-full h-full object-contain" src="icons/jessie-removebg-preview.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card" onclick="flipCard(this)">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <img class="w-full h-full object-contain" src="icons/WhatsApp_Image_2024-10-24_at_1.38.46_AM-removebg-preview.png" alt="">
+                            </div>
+                            <div class="card-back bg-red-500">
+                                <img class="w-full h-full object-contain" src="icons/Nita.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="step-2" class="step">
+                <h1 class="text-center font-bold text-2xl">ESCOGE MI CHAMP</h1>
+                <div class="card-container">
+                    <div class="card" onclick="flipCard(this)">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <img class="w-full h-full object-contain" src="icons/WhatsApp_Image_2024-10-24_at_1.38.46_AM-removebg-preview.png" alt="">
+                            </div>
+                            <div class="card-back bg-blue-400">
+                                <img class="w-full h-full object-contain" src="icons/Gale.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card" onclick="flipCard(this)">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <img class="w-full h-full object-contain" src="icons/WhatsApp_Image_2024-10-24_at_1.38.46_AM-removebg-preview.png" alt="">
+                            </div>
+                            <div class="card-back bg-yellow-100">
+                                <img class="w-full h-full object-contain" src="icons/Gus.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card" onclick="flipCard(this)">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <img class="w-full h-full object-contain" src="icons/WhatsApp_Image_2024-10-24_at_1.38.46_AM-removebg-preview.png" alt="">
+                            </div>
+                            <div class="card-back bg-blue-300">
+                                <img class="w-full h-full object-contain" src="icons/Chuck.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="step-3" class="step">
+                <h1 class="text-center font-bold text-2xl">ESCOGE MODO DE JUEGO</h1>
+                <div class="card-container">
+                    <div class="card" onclick="flipCard(this)">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <img class="w-full h-full object-contain" src="icons/WhatsApp_Image_2024-10-24_at_1.38.46_AM-removebg-preview.png" alt="">
+                            </div>
+                            <div class="card-back bg-red-500">
+                                <img class="w-full h-3/4 " src="icons/Duelo.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card" onclick="flipCard(this)">
+                        <div class="card-inner">
+                            <div class="card-front ">
+                                <img class="w-full h-full object-contain" src="icons/WhatsApp_Image_2024-10-24_at_1.38.46_AM-removebg-preview.png" alt="">
+                            </div>
+                            <div class="card-back bg-blue-400">
+                                <img class="w-3/4 h-3/4" src="icons/HotZone.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card" onclick="flipCard(this)">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <img class="w-full h-full object-contain" src="icons/WhatsApp_Image_2024-10-24_at_1.38.46_AM-removebg-preview.png" alt="">
+                            </div>
+                            <div class="card-back" style="background-color: #7CFC00;">
+                                <img class="w-full h-full object-contain" src="icons/Balon.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="step-4" class="step">
+                <div class="text-center font-extrabold text-3xl text-pink-500 mb-5">EL QUE GANE SE LA CHUPA AL OTRO</div>
+            </div>         
+                <button id="next-button" class="hidden">Siguiente</button>        
+            </div>          
+        </div>
+    </div>
+
+    <script>
+        const envelope = document.querySelector('.envelope-wrapper');
+        envelope.addEventListener('click', () => {
+            envelope.classList.toggle('flap');
+            envelope.classList.toggle('open');
+        });
+    </script>
+    
+    <script src="app.js"></script> 
+</body>
+</html>
+
